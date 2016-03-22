@@ -1,0 +1,18 @@
+  <div class="col s12 m3">
+    <div class="card blue darken-1">
+      <div class="card-content white-text">
+        <span class="card-title"> <%=  @product['name'] %></span>
+          <ul>
+            <li class='base_price'><%= @product['base_price'] %></li>
+            <li class='description'><%= @product['description'] %></li> 
+            <li class='quantity_on_hand'><%= @product['quantity_on_hand'] %></li> 
+          </ul>
+      </div>
+      <div class="card-action">
+        <a class ='show_product' href=<%= @product[:id] %>>Show</a>
+        <a class='edit_product' href="#" data-product-id=><% @product[:id] %>Edit</a>
+        <a class='delete_product' href=<%= @product[:id]  %>>delete</a>
+      </div>
+    </div>
+  </div>
+    
